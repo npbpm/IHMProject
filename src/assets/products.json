@@ -33,5 +33,26 @@
         "price": 80,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
         "image": "keyboard.png"
+    },
+    {
+        "id": 6,
+        "name": "Steam 20$ Gift Card",
+        "price": 20,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "steamGiftCards.png"
+    },
+    {
+        "id": 7,
+        "name": "Steam 30$ Gift Card",
+        "price": 30,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "steamGiftCards.png"
+    },
+    {
+        "id": 8,
+        "name": "Steam 50$ Gift Card",
+        "price": 50,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "steamGiftCards.png"
     }
 ]

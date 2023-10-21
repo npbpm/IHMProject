@@ -1,0 +1,28 @@
+.welcomeTxt{
+    font-size: 80px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descriptionTxt{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+.container{
+    height: 100vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 35px 0px;
+}
+
+.btn{
+    color: rgb(250, 247, 244);
+    font-weight: 800;
+    background-color: #6610f2;
+}

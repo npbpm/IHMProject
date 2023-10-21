@@ -9,9 +9,10 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsComponent } from './products/products.component';
 import { ProductModalComponent } from './product-modal/product-modal.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductsComponent, ProductModalComponent],
+  declarations: [AppComponent, ProductsComponent, ProductModalComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
