@@ -1,0 +1,19 @@
+.currentProdImg{
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; /* Center-align images in table cells */
+}
+
+.equal-width-table {
+    table-layout: fixed; /* Fix the table layout to control column widths */
+    width: 100%; /* Make the table fill its container */
+  }
+
+  .table{
+    text-align: center;
+  }
+
+.table th,
+.table td {
+  vertical-align: middle; /* Center-align content vertically within table cells */
+}

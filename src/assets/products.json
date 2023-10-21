@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Mouse",
+        "price": 80,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "mouse.png"
+    },
+    {
+        "id": 2,
+        "name": "Screen",
+        "price": 600,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "screen.png"
+    },
+    {
+        "id": 3,
+        "name": "Chair",
+        "price": 350,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "chair.png"
+    },
+    {
+        "id": 4,
+        "name": "Headset",
+        "price": 99,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "headset.png"
+    },
+    {
+        "id": 5,
+        "name": "Keyboard",
+        "price": 80,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "keyboard.png"
+    }
+]
