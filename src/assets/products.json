@@ -54,5 +54,12 @@
         "price": 50,
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
         "image": "steamGiftCards.png"
+    },
+    {
+        "id": 9,
+        "name": "Laptop",
+        "price": 1550,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis aliquam lectus. Proin posuere, purus.",
+        "image": "laptop.png"
     }
 ]

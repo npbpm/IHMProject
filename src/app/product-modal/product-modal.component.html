@@ -1,24 +1,26 @@
-<div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">Product Details</h4>
-  <button
-    type="button"
-    class="btn-close"
-    aria-label="Close"
-    (click)="activeModal.dismiss('Cross click')"
-  ></button>
-</div>
-<div class="modal-body">
-  <div>
+<div class="container">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Product Details</h4>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      aria-label="Close"
+      (click)="activeModal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
     <div>
-      <h1>Item Id: {{ product.id }}</h1>
+      <div>
+        <h1>#Id: {{ product.id }}</h1>
+      </div>
+      <img
+        class="img-thumbnail img-fluid rounded float-left selectedProdImg"
+        [src]="'assets/images/' + product.image"
+        alt="selectedProduct image"
+      />
+      <h1>{{ product.name }}</h1>
+      <p><Strong>Description:</Strong> {{ product.description }}</p>
+      <p><strong>Price:</strong> {{ product.price }}</p>
     </div>
-    <img
-      class="img-thumbnail img-fluid rounded float-left selectedProdImg"
-      [src]="'assets/images/' + product.image"
-      alt="selectedProduct image"
-    />
-    <h1>{{ product.name }}</h1>
-    <p><Strong>Description:</Strong> {{ product.description }}</p>
-    <p><strong>Price:</strong> {{ product.price }}</p>
   </div>
 </div>

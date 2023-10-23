@@ -1,5 +1,6 @@
 <div class="container formContainer">
   <form>
+    <h1>Contact Us!</h1>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <p *ngIf="emailError" class="mandatoryTxt">Please enter a valid email</p>
@@ -27,17 +28,24 @@
         [(ngModel)]="message"
         name="message"
         required
+        placeholder="Enter a Message"
       ></textarea
       ><small id="messageHelp" class="form-text text-muted"
         >Please leave us a message!</small
       >
     </div>
-    <button
-      type="submit"
+    <input
+      type="button"
       (click)="sendMessage()"
       class="btn btn-primary btn-lg mb-5"
-    >
-      Submit
-    </button>
+      value="Submit"
+    />
   </form>
+  <div class="drops">
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+  </div>
 </div>
