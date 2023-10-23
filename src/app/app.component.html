@@ -1,82 +1,61 @@
-<nav>
-  <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills nav-justified">
-    <li class="projectTitle" ngbNavItem>Our Project!</li>
-    <li ngbNavItem>
-      <a ngbNavLink routerLink="">Home</a>
-    </li>
-    <li ngbNavItem>
-      <a ngbNavLink routerLink="/products">Products</a>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/users">Users</button>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/orders">Orders</button>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/contact">Contact</button>
-    </li>
-  </ul>
-  <div [ngbNavOutlet]="nav"></div>
-</nav>
+<header>
+  <nav>
+    <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills nav-justified">
+      <li class="projectTitle" ngbNavItem>Our Project!</li>
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="">Home</a>
+      </li>
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="/products">Products</a>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink routerLink="/users">Users</button>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink routerLink="/orders">Orders</button>
+      </li>
+      <li ngbNavItem>
+        <button ngbNavLink routerLink="/contact">Contact</button>
+      </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
+  </nav>
+</header>
 
 <router-outlet></router-outlet>
 
-<!-- Footer -->
 <footer class="text-center text-white bg-dark bg-gradient">
-  <!-- Grid container -->
   <div class="container">
-    <!-- Section: Links -->
     <section class="mt-5">
-      <!-- Grid row-->
       <div class="row text-center d-flex justify-content-center pt-5">
-        <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
             <a routerLink="" class="text-white">Home</a>
           </h6>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
             <a routerLink="/products" class="text-white">Products</a>
           </h6>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
             <a routerLink="/users" class="text-white">Users</a>
           </h6>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
             <a routerLink="/orders" class="text-white">Orders</a>
           </h6>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-2">
           <h6 class="text-uppercase font-weight-bold">
             <a routerLink="/contact" class="text-white">Contact</a>
           </h6>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row-->
     </section>
-    <!-- Section: Links -->
-
     <hr class="my-5" />
-
-    <!-- Section: Text -->
     <section class="mb-5">
       <div class="row d-flex justify-content-center">
         <div class="col-lg-8">
@@ -99,8 +78,5 @@
         </div>
       </div>
     </section>
-    <!-- Section: Text -->
   </div>
-  <!-- Grid container -->
 </footer>
-<!-- Footer -->

@@ -10,9 +10,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsComponent } from './products/products.component';
 import { ProductModalComponent } from './product-modal/product-modal.component';
 import { HomeComponent } from './home/home.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductsComponent, ProductModalComponent, HomeComponent],
+  declarations: [AppComponent, ProductsComponent, ProductModalComponent, HomeComponent, ContactFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
