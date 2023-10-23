@@ -1,3 +1,5 @@
+//Composant développé par Nicolás Pérez
+
 import { Component, Input } from '@angular/core';
 import { product } from '../interfaces/product';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';

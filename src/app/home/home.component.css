@@ -26,3 +26,13 @@
     font-weight: 800;
     background-color: #6610f2;
 }
+
+.author{
+    text-decoration: none;
+    color: inherit;
+}
+
+.author:hover{
+    color:rgb(59, 59, 59);
+    transition: all 0.3 ease-in-out;
+}

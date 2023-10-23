@@ -1,3 +1,5 @@
+//Interface développé par Nicolás Pérez
+
 export interface product {
   id: number;
   name: string;

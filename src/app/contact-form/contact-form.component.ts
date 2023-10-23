@@ -1,3 +1,5 @@
+//Composant développé par Nicolás Pérez
+
 import { Component } from '@angular/core';
 
 @Component({

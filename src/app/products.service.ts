@@ -1,3 +1,5 @@
+//Service développé par Nicolás Pérez
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { product } from './interfaces/product';
