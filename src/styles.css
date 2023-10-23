@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 html, body{
-    background-color:rgb(250, 247, 244);
+    background: rgb(35,21,87);
+    background: linear-gradient(344deg, rgba(35,21,87,1) 0%, rgba(68,16,122,1) 29%, rgba(255,19,97,1) 67%, rgba(255,248,0,1) 100%); 
 
 }

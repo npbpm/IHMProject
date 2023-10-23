@@ -1,28 +1,53 @@
-<nav>
-  <ul ngbNav #nav="ngbNav" class="nav-tabs nav-pills nav-justified">
-    <li class="projectTitle" ngbNavItem>Our Project!</li>
-    <li ngbNavItem>
-      <a ngbNavLink routerLink="">Home</a>
-    </li>
-    <li ngbNavItem>
-      <a ngbNavLink routerLink="/products">Products</a>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/users">Users</button>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/orders">Orders</button>
-    </li>
-    <li ngbNavItem>
-      <button ngbNavLink routerLink="/contact">Contact</button>
-    </li>
-  </ul>
-  <div [ngbNavOutlet]="nav"></div>
+<nav
+  class="container navbar nav-pills navbar-expand-lg navbar-light bg-transparent"
+>
+  <div class="container-fluid">
+    <h1 class="projectTitle nav-item active navbar-brand">Our Project!</h1>
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleNavbar()"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Toggle button -->
+    <div
+      class="collapse navbar-collapse navbar-transition"
+      [ngClass]="isNavbarOpen ? 'show' : 'notShow'"
+    >
+      <ul
+        ngbNav
+        #nav="ngbNav"
+        class="navbar-nav mr-auto nav-justified navbar-brand"
+      >
+        <li ngbNavItem class="nav-item">
+          <a ngbNavLink routerLink="" aria-current="page" class="nav-link"
+            >Home</a
+          >
+        </li>
+        <li ngbNavItem class="nav-item">
+          <a ngbNavLink routerLink="/products" class="nav-link">Products</a>
+        </li>
+        <li ngbNavItem class="nav-item">
+          <a ngbNavLink routerLink="/users" class="nav-link">Users</a>
+        </li>
+        <li ngbNavItem class="nav-item">
+          <a ngbNavLink routerLink="/orders" class="nav-link">Orders</a>
+        </li>
+        <li ngbNavItem class="nav-item">
+          <a ngbNavLink routerLink="/contact" class="nav-link"> Contact </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+<div class="whiteLine"></div>
 
 <router-outlet></router-outlet>
 
-<footer class="text-center text-white bg-dark bg-gradient">
+<footer class="text-center text-white bg-transparent">
   <div class="container">
     <section class="mt-5">
       <div class="row text-center d-flex justify-content-center pt-5">

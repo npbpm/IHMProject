@@ -6,7 +6,8 @@
 
 nav{
     margin-bottom: 35px;
-    background-color: white;
+    padding: 10px 45px;
+    text-align: center;
 }
 
 footer a{
@@ -17,4 +18,47 @@ footer a{
 footer a:hover{
     color: rgb(184, 184, 184);
     transition: all 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+      max-height: 0;
+    }
+    to {
+      max-height: 500px; /* Adjust the max height based on your content */
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      max-height: 500px; /* Adjust the max height based on your content */
+    }
+    to {
+      max-height: 0;
+    }
+  }
+
+.show{
+    animation: slideIn 0.5s ease-in-out forwards;
+    transition: all 0.5s ease-in-out;
+}
+
+.notShow{
+    animation: slideOut 0.5s ease-in-out forwards;
+    transition: all 0.5s ease-in-out;
+}
+
+.whiteLine{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 3px;
+    border-radius: 35px;
+    position: relative;
+    top: -40px
+}
+
+.nav-link.active{
+    background-color: rgba(255, 255, 255, 0.244);
 }

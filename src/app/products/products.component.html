@@ -1,4 +1,12 @@
-<div class="table-responsive container-xxl">
+<div class="container" *ngIf="isLoading">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter">Loading</h3>
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive container-xxl" *ngIf="!isLoading">
   <table
     class="table table-striped table-hover equal-width-table table-bordered"
   >
