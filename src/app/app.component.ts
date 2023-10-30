@@ -1,3 +1,5 @@
+//Composant développé par Niama Amtoun & Nicolás Pérez
+
 import { Component } from '@angular/core';
 
 @Component({
