@@ -44,7 +44,6 @@
 }
 
 .waviy {
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 60px;
   }
   .waviy span {
@@ -65,4 +64,53 @@
     }
   }
   
+  @media screen and (max-width: 992px){
+    .welcomeTxt{
+      font-size: 70px
+  }
+  
+  .descriptionTxt{
+      font-size: 20px;
+  }
+  }
+
+  @media screen and (max-height: 720px){
+    .welcomeTxt{
+      font-size: 60px;
+    -webkit-text-stroke-width: 2px;
+  }
+  
+  .descriptionTxt{
+      font-size: 16px;
+  }
+  }
+
+  @media screen and (max-width: 472px){
+    .welcomeTxt{
+      font-size: 50px;
+    -webkit-text-stroke-width: 2px;
+  }
+  
+  .descriptionTxt{
+      font-size: 16px;
+  }
+
+  
+  .btn{
+    align-self: center;
+}
+  }
+
+  @media screen and (max-width: 280px){
+    .welcomeTxt{
+      font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+  }
+  
+  .descriptionTxt{
+      font-size: 14px;
+  }
+
+  }
+
   
