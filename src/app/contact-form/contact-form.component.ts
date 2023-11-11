@@ -10,29 +10,35 @@ import { Component } from '@angular/core';
 export class ContactFormComponent {
   constructor() {}
 
-  emailError: boolean = false;
-  messageError: boolean = false;
+  emailError: boolean = false; // Indicateur d'erreur pour le champ email
+  messageError: boolean = false; // Indicateur d'erreur pour le champ message
 
   email: string = '';
   message: string = '';
 
+  // Méthode appelée lorsqu'on souhaite envoyer le message
   sendMessage() {
+    // Vérifie si le champ email est vide
     if (this.email.trim() === '') {
-      this.emailError = true;
-      this.email = '';
+      this.emailError = true; // Active l'indicateur d'erreur pour le champ email
+      this.email = ''; // Réinitialise le champ email
     } else {
-      this.emailError = false;
+      this.emailError = false; // Désactive l'indicateur d'erreur pour le champ email
     }
 
+    // Vérifie si le champ message est vide
     if (this.message.trim() === '') {
-      this.messageError = true;
-      this.message = '';
+      this.messageError = true; // Active l'indicateur d'erreur pour le champ message
+      this.message = ''; // Réinitialise le champ message
     } else {
-      this.messageError = false;
+      this.messageError = false; // Désactive l'indicateur d'erreur pour le champ message
     }
 
+    // Si aucun des champs n'a d'erreur, affiche une alerte avec l'email et le message
     if (!this.emailError && !this.messageError) {
       alert('Email: ' + this.email + '\nMessage: ' + this.message);
+
+      // Réinitialise les champs et les indicateurs d'erreur
       this.emailError = false;
       this.messageError = false;
       this.email = '';
