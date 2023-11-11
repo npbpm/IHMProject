@@ -33,6 +33,11 @@
     background-color: #6610f2;
 }
 
+.btn:hover{
+  background-color: #7e2dff;
+  transition: all 0.3s ease-in-out;
+}
+
 .author{
     text-decoration: none;
     color: inherit;

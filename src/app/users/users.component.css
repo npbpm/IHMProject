@@ -22,6 +22,10 @@
     vertical-align: middle;
 }
 
+.container, .container-xxl{
+    min-height: 90vh;
+  }
+
 /* Effet d'animation pour le texte des utilisateurs */
 .animate-character {
     text-transform: uppercase;

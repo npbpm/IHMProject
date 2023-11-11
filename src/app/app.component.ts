@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isNavbarOpen: boolean = false;
 
+  //Méthode permettant de dérouler la navbar, elle s'applique uniquement à des écrans petit
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }

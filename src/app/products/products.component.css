@@ -18,7 +18,9 @@
   vertical-align: middle; /* Center-align content vertically within table cells */
 }
 
-
+.container, .container-xxl{
+  min-height: 100vh;
+}
 
 .animate-charcter
 {

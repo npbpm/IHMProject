@@ -12,6 +12,7 @@ export class ProductsService {
 
   constructor(private http: HttpClient) {}
 
+  //Méthode appelée lorsqu'on souhaite recueillir les donées de la BDD
   getProducts = () => {
     return this.http.get<Array<product>>(this.apiUrl);
   };
