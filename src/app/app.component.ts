@@ -1,4 +1,4 @@
-//Composant développé par Niama Amtoun & Nicolás Pérez
+//Composant développé par Nicolás Pérez
 
 import { Component } from '@angular/core';
 

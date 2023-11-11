@@ -22,11 +22,11 @@ export class ProductsComponent implements OnInit {
   ) {}
 
   // Méthode pour ouvrir une fenêtre modale avec les détails d'un produit spécifique
-  open(index: number) {
+  open = (index: number) => {
     this.modalRef = this.modalService.open(ProductModalComponent); // Ouvre une fenêtre modale avec le composant ProductModalComponent
 
     this.modalRef.componentInstance.product = this.products[index]; // Passe le produit spécifique au composant de la fenêtre modale
-  }
+  };
 
   ngOnInit(): void {
     this.isLoading = true; // Indique que les données sont en cours de chargement
