@@ -10,9 +10,9 @@ import { UsersService } from '../users.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit{
-modalRef: NgbModalRef | null = null; //Ca c'est le machin truc avec plus d'infos
-Users: Array<user> = []; // la variable qui stocke de la bdd bizarre
-isLoading: boolean = false; //c pr dire ça charge ok? attends un peu
+modalRef: NgbModalRef | null = null; 
+Users: Array<user> = []; // la variable qui stocke notre bdd json 
+isLoading: boolean = false; //Pour envoyer un message de chargement
 
 constructor(
   private usersService: UsersService,

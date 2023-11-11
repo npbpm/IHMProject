@@ -1,0 +1,43 @@
+<div class="container" *ngIf="isLoading">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-character">Chargement des commandes</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="table-responsive container-xxl" *ngIf="!isLoading">
+    <table
+    class="table table-striped table-hover equal-width-table table-bordered table-dark"
+  >
+      <thead>
+        <tr>
+          <th scope="col">#ID Commande</th>
+          <th scope="col">Utilisateur</th>
+          <th scope="col">Produit</th>
+          <th scope="col">Quantité</th>
+          <th scope="col">Feedback</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let currentOrder of Orders; index as i">
+          <th scope="row">
+            <h1>{{ currentOrder.id }}</h1>
+          </th>
+          <td>
+            <h3>{{ currentOrder.Username }}</h3>
+          </td>
+          <td>
+            <p>{{ currentOrder.Product }}</p>
+          </td>
+          <td>
+            <p>{{ currentOrder.quantity }}</p>
+          </td>
+          <td>
+            <p>{{ currentOrder.feedback }}</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
