@@ -23,7 +23,7 @@ export class UsersComponent implements OnInit {
 
   open(index: number) {
     this.modalRef = this.modalService.open(UsersModalComponent);
-    this.modalRef.componentInstance.users = this.Users[index];
+    this.modalRef.componentInstance.User = this.Users[index];
   }
 
   ngOnInit(): void {

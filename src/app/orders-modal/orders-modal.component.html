@@ -1,1 +1,23 @@
-<p>orders-modal works!</p>
+<div class="container">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">User Details</h4>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        aria-label="Close"
+        (click)="activeModal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <div>
+          <h1>#Id: {{ Orders.id }}</h1>
+        </div>
+        <h1>{{ Orders.Product }}</h1>
+        <p><Strong>User :</Strong> {{Orders.Username}}</p>
+        <p><strong>Quantity :</strong> {{ Orders.quantity }}</p>
+        <p><strong>Feedback :</strong> {{ Orders.feedback }}</p>
+      </div>
+    </div>
+  </div>
+  
