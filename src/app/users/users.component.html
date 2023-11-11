@@ -1,0 +1,46 @@
+<p>users works!</p>
+<div class="container" *ngIf="isLoading">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter">Loading</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="table-responsive container-xxl" *ngIf="!isLoading">
+    <table
+      class="table table-striped table-hover equal-width-table table-bordered table-dark"
+    >
+      <thead>
+        <tr>
+          <th scope="col">#Id</th>
+          <th scope="col">Username</th>
+          <th scope="col">Email</th>
+          <th scope="col">number</th>
+          <th scope="col">age</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let currentUser of Users; index as i">
+          <th scope="row">
+            <h1>{{ currentUser.id }}</h1>
+          </th>
+          <td>
+            <h3>{{ currentUser.Username }}</h3>
+          </td>
+          <td>
+            <p>{{ currentUser.email }}</p>
+          </td>
+          <td>
+            <p>{{ currentUser.number }}</p>
+          </td>
+          <td>
+            <p>{{ currentUser.age }}</p>
+          </td>
+          <!-- Ajoutez d'autres cellules pour afficher d'autres informations des utilisateurs -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

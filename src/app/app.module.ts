@@ -11,9 +11,11 @@ import { ProductsComponent } from './products/products.component';
 import { ProductModalComponent } from './product-modal/product-modal.component';
 import { HomeComponent } from './home/home.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { UsersComponent } from './users/users.component';
+import { UsersModalComponent } from './users-modal/users-modal.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductsComponent, ProductModalComponent, HomeComponent, ContactFormComponent],
+  declarations: [AppComponent, ProductsComponent, ProductModalComponent, HomeComponent, ContactFormComponent, UsersComponent, UsersModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
